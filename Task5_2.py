@@ -7,8 +7,7 @@ result = 0
 while number > q:
     q += 1
     if not q % 3 == 0:
-        cube = q ** 3
-        result += cube
+        result += q ** 3
 print("Result is: ", result)
 
 # Спосіб 2
