@@ -15,6 +15,5 @@ print("Result is: ", result)
 result = 0
 for item in range(1, number+1):
     if not item % 3 == 0:
-        cube = item ** 3
-        result += cube
+        result += item ** 3
 print("Result_1 is: ", result)
