@@ -80,6 +80,7 @@ print(truck_2.brand, truck_2.mark, ':', truck_2.colour)
 print(truck_2.brand, truck_2.mark, ':', truck_2.weight, 'kg')
 print(truck_2.brand, truck_2.mark, truck_2.age_years, 'y.o.', 'max load', truck_2.max_load, 'kg')
 
+
 print('-'*50)
 car_1 = Car('Volvo', 'xc-90', 4, 185, colour='blue')
 car_1.move()
@@ -93,7 +94,7 @@ print(car_1.brand, car_1.mark, ':', car_1.weight)
 print(car_1.brand, car_1.mark, car_1.age_years, 'y.o.', 'max speed', car_1.max_speed, 'kph')
 
 print('-'*50)
-car_2 = Car('Ford', 'Explorer', 2, 176, weight='2301')
+car_2 = Car('Ford', 'Explorer', 2, 176, weight='2300')
 car_2.move()
 car_2.birthday()
 car_2.birthday()
