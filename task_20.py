@@ -94,7 +94,7 @@ print(car_1.brand, car_1.mark, ':', car_1.weight)
 print(car_1.brand, car_1.mark, car_1.age_years, 'y.o.', 'max speed', car_1.max_speed, 'kph')
 
 print('-'*50)
-car_2 = Car('Ford', 'Explorer', 2, 176, weight='2300')
+car_2 = Car('Ford', 'Explorer', 2, 176, weight='2301')
 car_2.move()
 car_2.birthday()
 car_2.birthday()
