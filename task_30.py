@@ -1,39 +1,24 @@
 class String(str):
-
-    def __init__(self, x):
-        self.x = x
-
     def __add__(self, other):
-        x = str(self.x) + str(other)
-        return str(x)
+        x = str(self) + str(other)
+        return String(x)
 
     def __sub__(self, other):
-        self.x = str(self.x)
         other = str(other)
-
-        if str(other) in str(self.x):
-            print('-'*50)
-            print('It`s inside')
-            print('1:', self.x)
-            print('2:', other)
-            first_variable = str(self.x)
+        if str(other) in self:
+            first_variable = self
             second_variable = str(other)
             acdc = first_variable.split(second_variable, 1)
-            answer = ''.join(acdc)
+            answer = String(''.join(acdc))
             return answer
-
-        elif not str(other) in str(self.x):
-            print('-' * 50)
-            print('Not inside')
-            print('1:', self.x)
-            print('2:', other)
-            answer = self.x
-            return answer
+        elif not str(other) in self:
+            answer = self
+            return String(answer)
 
 
 print(String('New') + String(890))
-print(String(1234) + 5678)
-print(String('New') + 'castle')
+print(String(1234) + 5678+7)
+print(String('New') + 'castle'+55+'aas'+True+None+[12, 'as', 35]+(12, 'asd', 43)-5-12)
 print(String('New') + 77)
 print(String('New') + True)
 print(String('New') + ['s', ' ', 23])
@@ -66,4 +51,6 @@ print('Result:', k-ll)
 
 m = String(55678345672)
 n = 7
-print('Result:', m-n)
+sd = m-n
+print(sd)
+print(sd-n-n+5-456+'as'+None+True-'t'-'u')
