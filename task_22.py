@@ -73,8 +73,9 @@ if Auto.light(1700):
 else:
     print(f'{auto_2.full_name} is heavy car')
 
-# testing age of the car
+# Vitalii get`s a heritage. He is testing age of the car:
 auto_3 = Auto.from_year_of_make('Toyota', 'Highlander', 2007)
 print(f'{auto_3.full_name} {auto_3.age_years} y.o.')
+
 # Vitalii needs money
 auto_3 = Auto.sell_car(auto_3.brand, auto_3.mark, auto_3.age_years)
