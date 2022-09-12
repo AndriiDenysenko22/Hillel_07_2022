@@ -79,3 +79,4 @@ print(f'{auto_3.full_name} {auto_3.age_years} y.o.')
 
 # Vitalii needs money
 auto_3 = Auto.sell_car(auto_3.brand, auto_3.mark, auto_3.age_years)
+# auto_3 is no more
