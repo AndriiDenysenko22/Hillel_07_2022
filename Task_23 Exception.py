@@ -50,8 +50,6 @@ class Calculator(object):
             print(ve)
 
 
-
-# create a calculator object
 my_cl = Calculator()
 
 while True:
@@ -66,14 +64,11 @@ while True:
 
     ch = int(input("Select operation: "))
 
-    # Make sure the user have entered the valid choice
     if ch in (1, 2, 3, 4, 6, 7):
 
-        # first check whether user want to exit
         if (ch == 7):
             break
 
-        # If not then ask fo the input and call appropiate methods
         a = int(input("Enter first number: "))
         b = int(input("Enter second number: "))
 
@@ -94,8 +89,7 @@ while True:
                 print(a, "/", b, "=",  my_cl.divide(a, b))
             else:
                 my_cl.divide(a, b)
-        # elif (ch == 5):
-        #     print('square_root of', a, "=", my_cl.square_root(a))
+
         elif (ch == 6):
             if b >= 0:
                 print(a, "**", b, "=", my_cl.exponentiation(a, b))
