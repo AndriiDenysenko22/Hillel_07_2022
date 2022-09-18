@@ -1,11 +1,14 @@
-def geo_progres(value):
-    while value > 1:
-        value -= 1
-        yield value**2
+# Это умножение на какое-то заданное число, к примеру, геометрическая прогрессия на 3 от единицы:
+# 1, 3, 9, 27, 81... и т.д.
+
+def geo_progres(i):
+    for value in range(i):
+        yield 3**value
+        value += 1
 
 
 listic = []
-for item in geo_progres(25):
+for item in geo_progres(5):
     listic.append(item)
-
-print('Geometric progression:', listic[::-1])
+listic.append('.... и т.д.')
+print(listic)
