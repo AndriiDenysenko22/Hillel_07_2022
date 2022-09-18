@@ -8,7 +8,7 @@ def geo_progression(i):
 
 
 listic = []
-for item in geo_progres(5):
+for item in geo_progression(5):
     listic.append(item)
 listic.append('.... и т.д.')
 print(listic)
