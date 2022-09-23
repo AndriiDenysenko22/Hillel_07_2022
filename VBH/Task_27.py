@@ -57,9 +57,7 @@ while True:
                     aaa = today.year - item4.year
 
                 item.append(f'age: {aaa} years')
-                # if item[5] is None:
-                #     print(f'{item[2]} {item[0]} {item[1]}, sex: {item[3]}, birthdate: {item[4]}, {item[6]}', sep='\n')
-                # else:
+
                 print(f'{item[1]} {item[0]} {item[2]}, sex: {item[3]}, birthdate: {item[4]}, '
                       f'date of death: {item[5]}, {item[6]}', sep='\n')
 

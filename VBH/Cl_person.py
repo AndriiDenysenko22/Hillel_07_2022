@@ -30,20 +30,20 @@ class Person(object):
             date_of_birth = date_2.strftime('%d.%m.%Y')
             break
 
-        while True:
-            last_name = input('Enter a person`s last_name')
-            if last_name.isalpha():
-                break
-            else:
-                print('Please use only letters for entering  lastname.')
-                continue
-        while True:
-            patronomic = input('Enter a person`s patronomic')
-            if patronomic.isalpha():
-                break
-            else:
-                print('Please use only letters for entering  patronomic.')
-                continue
+        # while True:
+        last_name = input('Enter a person`s last_name')
+            # if last_name.isalpha():
+            #     break
+            # else:
+            #     print('Please use only letters for entering  lastname.')
+            #     continue
+        # while True:
+        patronomic = input('Enter a person`s patronomic')
+            # if patronomic.isalpha():
+            #     break
+            # else:
+            #     print('Please use only letters for entering  patronomic.')
+            #     continue
 
         while True:
             date_entry2 = input('Enter a person`s date_of_death in DD-MM-YYYY format')
